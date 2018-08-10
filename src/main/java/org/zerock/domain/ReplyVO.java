@@ -1,0 +1,65 @@
+package org.zerock.domain;
+
+import java.util.Date;
+
+public class ReplyVO {
+	private int rno;
+	private int bno;
+	private String replytext;
+	private String replyer;
+	private Date regdate;
+	private Date updatedate;
+	public ReplyVO() {
+		super();
+	}
+	public ReplyVO(int rno, int bno, String replytext, String replyer, Date regdate, Date updatedate) {
+		super();
+		this.rno = rno;
+		this.bno = bno;
+		this.replytext = replytext;
+		this.replyer = replyer;
+		this.regdate = regdate;
+		this.updatedate = updatedate;
+	}
+	public int getRno() {
+		return rno;
+	}
+	public int getBno() {
+		return bno;
+	}
+	public String getReplytext() {
+		return replytext;
+	}
+	public String getReplyer() {
+		return replyer;
+	}
+	public Date getRegdate() {
+		return regdate;
+	}
+	public Date getUpdatedate() {
+		return updatedate;
+	}
+	public void setRno(int rno) {
+		this.rno = rno;
+	}
+	public void setBno(int bno) {
+		this.bno = bno;
+	}
+	public void setReplytext(String replytext) {
+		this.replytext = replytext;
+	}
+	public void setReplyer(String replyer) {
+		this.replyer = replyer;
+	}
+	public void setRegdate(Date regdate) {
+		this.regdate = regdate;
+	}
+	public void setUpdatedate(Date updatedate) {
+		this.updatedate = updatedate;
+	}
+	@Override
+	public String toString() {
+		return "ReplyVO [rno=" + rno + ", bno=" + bno + ", replytext=" + replytext + ", replyer=" + replyer
+				+ ", regdate=" + regdate + ", updatedate=" + updatedate + "]";
+	}
+}
